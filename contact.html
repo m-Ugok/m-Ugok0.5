@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>お問い合わせフォーム</title>
+  </head>
+  <body>
+    <section>
+      <form action="#" method="POST">
+        <table id="form">
+          <tr>
+            <td colspan="2">お問い合わせフォーム</td>
+          </tr>
+          <tr>
+            <td><label for="name">お名前</label></td>
+            <td><input type="text" name="name" id="name" /></td>
+          </tr>
+          <tr>
+            <td><label for="mail">メールアドレス</label></td>
+            <td><input type="email" name="mail" id="mail" /></td>
+          </tr>
+          <tr>
+            <td><label for="tel">電話番号</label></td>
+            <td><input type="tel" name="tel" id="tel" /></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <label>
+                <input
+                  type="radio"
+                  value="enterprise"
+                  name="person"
+                />企業</label
+              >
+              <label>
+                <input type="radio" value="individual" name="person" />個人
+              </label>
+              <label>
+                <input type="radio" value="other" name="person" />その他</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td label for="category">カテゴリ</td>
+            <td>
+              <select name="category" id="category">
+                <option value="enp">就職について</option>
+                <option value="work">お仕事について</option>
+                <option value="que">ご質問</option>
+                <option value="others">その他</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="contents">お問い合わせ内容</label></td>
+            <td>
+              <textarea name="contents" id="contents" 　rows="8"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <button type="submit" value="送信">送信</button>
+              <button type="reset" value="クリア">クリア</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </section>
+    <br />
+    <a href="./index.html">トップページに戻る</a>
+  </body>
+</html>
